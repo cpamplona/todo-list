@@ -4,16 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   // templateUrl: './app.component.html',
   template: `
-    <h1>
-      Welcome to {{ title }}!
-    </h1>
-    <app-input-btn-unit></app-input-btn-unit>
-
-    <ul>
-      <li *ngFor="let item of todoList">
-        {{ item.title }}
-      </li>
-    </ul>
+     <h1 class="app-title">
+    Welcome to {{ title }}!
+  </h1>
+    <app-list-manager></app-list-manager>
   `,
   styleUrls: ['./app.component.scss']
 })
